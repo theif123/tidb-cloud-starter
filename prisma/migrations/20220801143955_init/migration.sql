@@ -61,3 +61,13 @@ CREATE TABLE `users` (
     UNIQUE INDEX `nickname`(`nickname`),
     PRIMARY KEY (`id`)
 ) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
+
+-- CreateTable
+CREATE TABLE `infos` (
+    `id` BIGINT NOT NULL,
+    `mobile` DECIMAL(15, 2) NULL DEFAULT 0.0,
+    `marks` VARCHAR(100) NOT NULL,
+
+    UNIQUE INDEX `nickname`(`nickname`),
+    PRIMARY KEY (`id`)
+) DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
